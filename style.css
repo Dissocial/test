@@ -1,0 +1,189 @@
+
+@font-face {
+	font-family: 'Bebas Bold';
+	src: url('fonts/Bebas/BebasNeue Bold/fonts/BebasNeue Bold.eot');
+	src: local('☺'), url('fonts/Bebas/BebasNeue Bold/fonts/BebasNeue Bold.woff') format('woff'), url('fonts/Bebas/BebasNeue Bold/fonts/BebasNeue Bold.ttf') format('truetype'), url('fonts/Bebas/BebasNeue Bold/fonts/BebasNeue Bold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+.visually-hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+body{
+    font-family: 'Bebas Bold';
+    color: #858686;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* БЛОК ВЫБОР ЛИЦЕНИЗИИ */
+.license-buy{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 370px;
+    height: 380px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    border: 9px solid #ebebeb;
+    padding: 10px;
+}
+
+.plan-select{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-bottom: 1px solid #ebebeb;
+    padding:0;
+    
+} 
+
+.plan-item{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.plan-item:focus,
+.plan-item:active,
+.plan-item:hover{
+    background-color:#EBF4F7;
+    border: 1px solid #BBD9E3;
+    outline: none;
+    
+}
+.checkbox{
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    background-image:url(img/off.svg);
+    background-repeat: no-repeat;
+    margin-left: -2em;
+}
+.option{
+    display: block;
+    margin-bottom: 0.25em;
+}
+
+.plan-label{
+    padding-left: 2em;
+}
+
+.plan-radio{
+    appearance: none; 
+}
+
+.plan-radio:checked + .checkbox{
+    background-image:url(img/on.svg);
+    background-repeat: no-repeat;
+}
+
+
+.price{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 11px;
+    margin-left: auto;
+}
+
+/* КОЛИЧЕСТВО ЛИЦЕНЗИЙ */
+.lic-number{
+    display:flex;
+    justify-content: center;
+    border-bottom: 1px solid #c3c9c9;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    color: black;
+}
+.lic-number span{
+    padding-right: 7px;
+}
+.lic-number select:hover,
+.lic-number select:focus,
+.lic-number select:active{
+    outline:none;
+    border: 1px solid #92B3EB;
+}
+
+
+/* ПОКУПКА */
+.total{
+    width: 35%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    text-align: center;
+}
+
+.total-amount{
+    font-size: 18px;
+    padding-bottom: 8px;
+    margin: 0;
+}
+
+
+
+.total-amount sup{
+    color:#3388A7;
+    position: relative;
+    top:-3px;
+}
+
+.buy-button{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    display: inline-block;
+    background-color: #42A845;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom:30px;
+    transition: 0.3s ease-in;
+
+}
+
+.buy-button:hover,
+.buy-button:focus{
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.buy-button:active{
+    background-color: chartreuse;
+    opacity: 0.5;
+}
+
+
+.cost{
+    color:#3388A7 ;
+}
+
+.selected__plan{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    color:#3388A7;
+    width: 130px;
+    margin-left: -5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}

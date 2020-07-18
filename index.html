@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="license-buy">
+        <form>
+            <fieldset class="plan-select">
+                <legend class="visually-hidden"> Choose your plan</legend>
+                <p class="plan-item" tabindex="1">
+                    <label class="plan-label option" >
+                    <input type="radio" data-name="#1" class="plan-radio" id="plan_1" name="plan" value="13" tabindex="2">
+                    <span class="checkbox"></span>
+                    License plan #1</label>
+                    <span class="price">$13 per license</span>
+                </p>
+                <p class="plan-item" tabindex="3">
+                    <label class="plan-label option">
+                    <input type="radio" data-name="#2" class="plan-radio" id="plan_2" name="plan" value="22" tabindex="4">
+                    <span class="checkbox"></span>
+                    License plan #2</label>
+                    <span class="price">$22 per license</span>
+                </p>
+                <p class="plan-item" tabindex="5">
+                    <label class="plan-label option">
+                    <input type="radio" data-name="#3" class="plan-radio" id="plan_3" name="plan" value="34" tabindex="6">
+                    <span class="checkbox"></span>
+                    License plan #3</label>
+                    <span class="price">$34 per license</span>
+                </p>
+            </fieldset>
+            <p class="lic-number">
+                <span>Number of licenses:</span>
+                <select id="number">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                </select>
+            </p>
+            <div class="total">
+                <p class="total-amount">Total:<span class="cost" id="cost">0</span><sup>us</sup></p>
+                <a href="#" class="buy-button">Buy now</a>
+                <p class="selected__plan">Selected plan: <span class="plan">none</span></p>
+            </div>
+        </form>
+    </section>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
